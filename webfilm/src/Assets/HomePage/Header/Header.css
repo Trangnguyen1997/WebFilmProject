@@ -1,0 +1,35 @@
+.navbar .container {
+  align-items: center; }
+  .navbar .container .navbar-collapse {
+    font-weight: bold; }
+    .navbar .container .navbar-collapse .navbar-nav {
+      font-size: 13px; }
+      .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        color: black; }
+      .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        color: #FFF100;
+        transition: 0.1s; }
+    .navbar .container .navbar-collapse .form {
+      align-items: center; }
+      .navbar .container .navbar-collapse .form .regis {
+        color: #FFF100;
+        text-decoration: none; }
+      .navbar .container .navbar-collapse .form .regis:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #FFF100; }
+      .navbar .container .navbar-collapse .form .btnLogin {
+        font-weight: bold;
+        background-color: #FFF100;
+        border: none; }
+      .navbar .container .navbar-collapse .form .btnLogin:hover {
+        border: 1px solid white;
+        background-color: black;
+        color: #FFF100; }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: yellow;
+    color: white; } }
+
+/*# sourceMappingURL=Header.css.map */

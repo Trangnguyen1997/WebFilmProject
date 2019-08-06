@@ -1,0 +1,14 @@
+.nav .nav-item {
+  margin-right: 5px; }
+  .nav .nav-item .nav-link {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-color: transparent; }
+  .nav .nav-item .nav-link:hover {
+    font-weight: bold;
+    background-color: yellow;
+    color: black;
+    border-color: transparent; }
+
+/*# sourceMappingURL=App.css.map */
