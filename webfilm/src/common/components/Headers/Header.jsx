@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -11,22 +12,22 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="collapsibleNavId">
           <ul className="navbar-nav m-auto mt-2 mt-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="#">TRANG CHỦ</a>
+              <NavLink to='/home' className="nav-link">TRANG CHỦ</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">LIÊN HỆ</a>
+              <NavLink to='/lienhe' className="nav-link">LIÊN HỆ</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">TIN TỨC</a>
+              <NavLink to='/tintuc' className="nav-link">TIN TỨC</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">ỨNG DỤNG</a>
+              <NavLink to='/tintuc' className="nav-link">ỨNG DỤNG</NavLink>
             </li>
           </ul>
 
           <div className="form my-2 my-lg-0">
-            <a href="" className="regis mr-sm-3">Đăng ký</a>
-            <button className="btnLogin my-2 my-sm-0" type="submit">Đăng nhập</button>
+            <NavLink to='/dangky' className="regis mr-sm-3">Đăng ký</NavLink>
+            <NavLink to='/dangnhap'><button className="btnLogin my-2 my-sm-0" type="submit">Đăng nhập</button></NavLink>
           </div>
 
         </div>

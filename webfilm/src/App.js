@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
-import Header from './common/components/Headers/Header';
-import Carousel from './common/components/Carousel/Carousel';
-import ProductList from './common/components/Product/ProductList';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Home from './pages/HomePage/Home';
+import HomePage from './templates/HomePage';
 
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <Carousel/>
-     <br/>
-     <ProductList/>
-    </div>
+    <BrowserRouter>
+      <Fragment>
+        <Switch>
+          <HomePage path='/home' Component={Home}></HomePage>
+  
+          <HomePage path='/' Component={Home}></HomePage>
+        </Switch>
+      </Fragment>
+    </BrowserRouter>
+
   );
 }
 
