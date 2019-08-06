@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
-import FilmManagementReducer from './reducers/FilmManagementReducers';
+import listFilmReducer from './reducers/FilmManagementReducers';
 
 const rootReducer = combineReducers({
-    FilmManagementReducer
+    listFilmReducer
 });
 export default rootReducer;
