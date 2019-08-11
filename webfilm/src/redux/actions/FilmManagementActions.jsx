@@ -22,3 +22,26 @@ export const getListFilmAction = ()=>{
         })
     }
 }
+export const dangNhapAction = (nguoiDung) =>{
+    return dispatch =>{
+        axios({
+            method:'POST',
+            url:config.domain + 'QuanLyNguoiDung/DangNhap',
+            data:nguoiDung
+        }).then(result=>{
+            localStorage.setItem(config.accessToken,result.data.accessToken);
+            localStorage.setItem(config.userLogin, JSON.stringify(result.data))
+            dispatch({
+                type:types.DANG_NHAP,
+                isLogin:true,
+            })
+        }).catch(error=>{
+            dispatch({
+                type:types.DANG_NHAP,
+                isLogin:false
+            })
+            console.log(error.response.data);
+            
+        })
+    }
+}

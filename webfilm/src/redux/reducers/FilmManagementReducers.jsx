@@ -1,7 +1,8 @@
 import * as types from '../contants/FilmManagement';
 
 const stateDefault = {
-    ListFilm:[]
+    ListFilm:[],
+    // isLogin: localStorage.getItem('isLogin') ? localStorage.getItem('isLogin') : false
 }
 
 const listFilmReducer = (state=stateDefault, action)=>{
@@ -9,6 +10,10 @@ const listFilmReducer = (state=stateDefault, action)=>{
         case types.GET_LIST_FILM:{
             state.ListFilm = action.ListFilm;
             return {...state}
+        }
+        case types.DANG_NHAP:{
+            state.isLogin = action.isLogin
+            return{...state}
         }
     }
     return {...state}
