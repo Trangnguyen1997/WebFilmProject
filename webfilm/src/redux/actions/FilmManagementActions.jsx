@@ -6,19 +6,14 @@ export const getListFilmAction = ()=>{
     return dispatch =>{
         axios({
             method: 'GET',
-            url:config.domain + 'QuanLyPhim/LayDanhSachPhim?maNhom=GP08'
+            url:config.domain + 'QuanLyPhim/LayDanhSachPhim?maNhom=GP02'
         }).then(result=>{
             dispatch({
                 type:types.GET_LIST_FILM,
-                ListFilm:result.data,
-                
-                
-            })
-          
-            
+                ListFilm:result.data,               
+            })           
         }).catch(error =>{
-            console.log(error.response.data);
-            
+            console.log(error.response.data);            
         })
     }
 }

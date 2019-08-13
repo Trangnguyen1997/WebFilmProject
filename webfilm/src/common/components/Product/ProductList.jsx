@@ -22,25 +22,16 @@ export default class ProductList extends Component {
               <div id="home" className="container tab-pane active"><br />
                 <div className="row">
                <Product/>
-               <Product/>
-               <Product/>
-               <Product/>
                 </div>
               
               </div>
               <div id="menu1" className="container tab-pane fade"><br />
               <div className="row">
                <Product/>
-               <Product/>
-               <Product/>
-               <Product/>
                 </div>
               </div>
               <div id="menu2" className="container tab-pane fade"><br />
               <div className="row">
-               <Product/>
-               <Product/>
-               <Product/>
                <Product/>
                 </div>
               </div>
