@@ -8,8 +8,8 @@ export default function Carousel() {
                 <li data-target="#demo" data-slide-to={0} className="active" />
                 <li data-target="#demo" data-slide-to={1} className />
                 <li data-target="#demo" data-slide-to={2} className />
-                <li data-target="#demo" data-slide-to={2} className />
-                <li data-target="#demo" data-slide-to={2} className />
+                <li data-target="#demo" data-slide-to={3} className />
+                <li data-target="#demo" data-slide-to={4} className />
             </ul>
             {/* The slideshow */}
             <div className="carousel-inner">
